@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bhargava.cse.Quiz"
+    android:background="@drawable/wave_image">
+    <TextView
+        android:id="@+id/ques"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#97F181"/>
+
+
+    <RadioGroup
+        android:id="@+id/RGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <RadioButton
+            android:id="@+id/RbA"
+            android:text="Please Wait"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F8FBFC"
+            android:padding="15dp"/>
+
+        <RadioButton
+            android:id="@+id/RbB"
+            android:text="The Questions"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F8FBFC"
+            android:padding="15dp"/>
+
+        <RadioButton
+            android:id="@+id/RbC"
+            android:text="Are Loading"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F8FBFC"
+            android:padding="15dp"/>
+
+        <RadioButton
+            android:id="@+id/RbD"
+            android:text="From Database!!"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F8FBFC"
+            android:padding="15dp" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/accuracy"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#EAF17C"/>
+
+</LinearLayout>

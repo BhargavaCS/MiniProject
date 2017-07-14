@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">CSE</string>
+
+    <string-array name="First">
+        <item>English</item>
+        <item>Mathematics-I</item>
+        <item>Chemistry</item>
+        <item>Introduction To CS And IT</item>
+        <item>Basic Electrical Engineering</item>
+        <item>Professional Ethics</item>
+    </string-array>
+
+    <string-array name="Second">
+        <item>Mathematics-II</item>
+        <item>Physics</item>
+        <item>Computer Programming Through C</item>
+        <item>Engineering Mechanics</item>
+        <item>Electronic Devices And Circuits</item>
+    </string-array>
+
+    <string-array name="Third">
+        <item>Discrete Mathematical Structures</item>
+        <item>Managerial Economics And Financial Accounting</item>
+        <item>Operating Systems</item>
+        <item>Switching Theory And Logical Design</item>
+        <item>Computer Organisation</item>
+        <item>Data Structures</item>
+    </string-array>
+
+    <string-array name="Fourth">
+        <item>Probability Statistics And Numerical Methods</item>
+        <item>Design And Analysis Of Algorithms</item>
+        <item>Unix And Shell Programming</item>
+        <item>Database Management Systems</item>
+        <item>Object Oriented Programming Through JAVA</item>
+        <item>Computer Graphics</item>
+        <item>Environmental Studies</item>
+    </string-array>
+
+    <string-array name="Fifth">
+        <item>Formal Languages And Automata Theory</item>
+        <item>Web Programming</item>
+        <item>Embedded Systems-1</item>
+        <item>Object Oriented Analysis and Design</item>
+        <item>Software Engineering</item>
+        <item>Artificial Intelligence</item>
+    </string-array>
+
+    <string-array name="Sixth">
+        <item>Management Science</item>
+        <item>Data Warehousing And Data Mining</item>
+        <item>Compiler Design</item>
+        <item>Computer Networks</item>
+        <item>Information Storage Systems</item>
+        <item>Image Processing</item>
+        <item>Human Computer Interaction</item>
+        <item>Machine Learning</item>
+        <item>MiddleWare Technologies</item>
+        <item>Advanced Computer Architecture</item>
+    </string-array>
+
+    <string-array name="Seventh">
+        <item>Embedded Systems-2</item>
+        <item>Software Testing</item>
+        <item>Principles Of Programming Languages</item>
+        <item>Cryptography And Network Security</item>
+        <item>Mobile Communications</item>
+        <item>Natural Language Processing</item>
+        <item>Unix Network Programming</item>
+        <item>Information Storage Security And Management</item>
+        <item>Cloud Computing</item>
+    </string-array>
+
+    <string-array name="Eighth">
+        <item>Network Management Systems</item>
+        <item>Bio-Informatics</item>
+        <item>Big Data And Hadoop</item>
+        <item>Multi-Core Programming</item>
+        <item>Pattern Recognition</item>
+    </string-array>
+
+</resources>
+

@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+
+    buildToolsVersion '25.0.3'
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    defaultConfig {
+        applicationId "com.example.bhargava.cse"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        multiDexEnabled true
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.firebase:firebase-client-android:2.5.0'
+    compile 'com.google.android.gms:play-services:10.2.6'  // add this line
+    compile 'com.google.firebase:firebase-database:10.0.1' // add this line
+    compile 'com.google.firebase:firebase-auth:10.0.1'     // add this line
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+
+

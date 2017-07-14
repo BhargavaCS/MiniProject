@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "782454885629",
+    "firebase_url": "https://miniprojectquestions.firebaseio.com",
+    "project_id": "miniprojectquestions",
+    "storage_bucket": "miniprojectquestions.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782454885629:android:af661f18830ab4f0",
+        "android_client_info": {
+          "package_name": "com.example.bhargava.drivetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782454885629-bm7270iogfduf2cqsrmbcqp8h0i5npkc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ8Ly2wkWxfVmAPRSgC9dkprJT4xIVQFU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782454885629:android:e148935b096e05bc",
+        "android_client_info": {
+          "package_name": "com.example.bhargava.cse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782454885629-bm7270iogfduf2cqsrmbcqp8h0i5npkc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ8Ly2wkWxfVmAPRSgC9dkprJT4xIVQFU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
