@@ -20,8 +20,6 @@ public class StartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_start);
     }
 
-
-
     //When Quiz Button Is Chosen
     public void take_quiz_clicked(View view)
     {
@@ -45,12 +43,14 @@ public class StartActivity extends AppCompatActivity {
 
 
         Calendar today = Calendar.getInstance();
+        try {
+            Uri uriCalendar = Uri.parse("content://com.android.calendar/time/" + String.valueOf(today.getTimeInMillis()));
+            Intent intentCalendar = new Intent(Intent.ACTION_VIEW, uriCalendar);
 
-        Uri uriCalendar = Uri.parse("content://com.android.calendar/time/" + String.valueOf(today.getTimeInMillis()));
-        Intent intentCalendar = new Intent(Intent.ACTION_VIEW,uriCalendar);
-
-        //Use the native calendar app to view the date
-        startActivity(intentCalendar);
+            //Use the native calendar app to view the date
+            startActivity(intentCalendar);
+        }
+        catch (Exception e){Toast.makeText(this,"Alert--Please Restart The App Again!!!",Toast.LENGTH_SHORT).show();}
     }
 
     //When FeedBack Button Is Chosen
@@ -66,5 +66,7 @@ public class StartActivity extends AppCompatActivity {
         intent.addCategory(Intent.CATEGORY_HOME);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
+        android.os.Process.killProcess(android.os.Process.myPid());
     }
+
 }

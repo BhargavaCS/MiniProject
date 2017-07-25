@@ -25,16 +25,22 @@ public class Semester extends AppCompatActivity {
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.activity_semester,R.id.tv_id,Semesters);
             ListView l = (ListView) findViewById(R.id.lv);
             TextView tv=(TextView) findViewById(R.id.tv_id);
-            tv.setText("Chose A Semester From the Following");
+            tv.setText("Choose A Semester From the Following");
             l.setAdapter(adapter);
             l.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    String name = (String) parent.getItemAtPosition(position);
-                    name=name.split(" ")[0];
-                    Intent intent = new Intent(Semester.this, SemSubjects.class);
-                    intent.putExtra("Selected", name);
-                    startActivity(intent);
+                    try {
+                        String name = (String) parent.getItemAtPosition(position);
+                        name = name.split(" ")[0];
+                        Intent intent = new Intent(Semester.this, SemSubjects.class);
+                        intent.putExtra("Selected", name);
+                        startActivity(intent);
+                    }
+                    catch (Exception e)
+                    {
+                        Toast.makeText(Semester.this,"Alert--Please Restart The App Again!!!",Toast.LENGTH_SHORT).show();
+                    }
                 }
             });
         } catch (Exception e) {
