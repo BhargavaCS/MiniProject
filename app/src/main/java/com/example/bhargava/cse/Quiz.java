@@ -212,22 +212,31 @@ public class Quiz extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent intent=new Intent(this,StartActivity.class);
-        startActivity(intent);
-        toast.cancel();
+        try {
+            Intent intent = new Intent(this, StartActivity.class);
+            startActivity(intent);
+            if(toast!=null) toast.cancel();
+        }
+        catch(Exception e){}
         finish();
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                NavUtils.navigateUpFromSameTask(this);
-                return true;
+        try {
+            switch (item.getItemId()) {
+                case android.R.id.home:
+                    NavUtils.navigateUpFromSameTask(this);
+                    return true;
+            }
+            if(toast!=null) toast.cancel();
         }
-        toast.cancel();
-        finish();
-        return super.onOptionsItemSelected(item);
+        catch (Exception e){}
+        finally
+        {
+            finish();
+            return super.onOptionsItemSelected(item);
+        }
     }
 
 }

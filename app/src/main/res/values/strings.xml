@@ -79,5 +79,9 @@
         <item>Pattern Recognition</item>
     </string-array>
 
+    <string-array name="Miscellaneous">
+        <item>Other Resources</item>
+    </string-array>
+
 </resources>
 

@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class Semester extends AppCompatActivity {
 
-    String []Semesters=new String[] {"First Semester","Second Semester","Third Semester","Fourth Semester","Fifth Semester","Sixth Semester","Seventh Semester","Eighth Semester"};
+    String []Semesters=new String[] {"First Semester","Second Semester","Third Semester","Fourth Semester","Fifth Semester","Sixth Semester","Seventh Semester","Eighth Semester","Miscellaneous"};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
